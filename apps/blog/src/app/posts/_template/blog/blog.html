@@ -1,8 +1,32 @@
-<div>
-  <app-explanation />
-  <button (click)="reset()" class="btn btn-outline-primary">Reset</button>
-  <hr />
-  @if (showDemo()) {
-  <app-demo />
-  }
+<h3>Article Title</h3>
+<div
+  class="btn-group"
+  role="group"
+  aria-label="Basic radio toggle button group">
+  <input
+    [(ngModel)]="display"
+    type="radio"
+    class="btn-check"
+    name="section"
+    id="explain"
+    value="explain" />
+  <label class="btn btn-outline-primary" for="explain">Explanation</label>
+  <input
+    [(ngModel)]="display"
+    type="radio"
+    class="btn-check"
+    name="section"
+    id="code"
+    value="code" />
+  <label class="btn btn-outline-primary" for="code">Code</label>
 </div>
+@switch (display()){ @case ('explain'){
+<app-explanation />
+} @case ('code'){
+<app-code />
+} }
+<hr />
+<button (click)="reset()" class="btn btn-outline-primary">Reset</button>
+@if (showDemo()) {
+<app-demo />
+}

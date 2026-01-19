@@ -1,38 +1,72 @@
-@import "./bootstrap.min.css";
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 0.2em;   /* tighten spacing */
-  line-height: 1.15;       /* slightly denser */
+@import './bootstrap.min.css';
+
+body {
+  padding: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.2em; /* tighten spacing */
+  line-height: 1.15; /* slightly denser */
 }
 
 /* Size tweaks — roughly 10–15% smaller than Bootstrap defaults */
-h1 { font-size: 1.9rem; }
-h2 { font-size: 1.65rem; }
-h3 { font-size: 1.45rem; }
-h4 { font-size: 1.25rem; }
-h5 { font-size: 1.05rem; }
-h6 { font-size: 0.9rem; }
+h1 {
+  font-size: 1.9rem;
+}
+h2 {
+  font-size: 1.65rem;
+}
+h3 {
+  font-size: 1.45rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+h5 {
+  font-size: 1.05rem;
+}
+h6 {
+  font-size: 0.9rem;
+}
 
 .h2 {
   font-size: 1.65rem;
 }
 
 /* Paragraphs and lists */
-p, ul, ol {
-  margin-top: 0.2em;
-  margin-bottom: 0.2em;
+p,
+ul,
+ol {
+  line-height: 1.3;
+  margin-bottom: 0.5em;
 }
 
 /* Reduce default section spacing */
-section, .container, .container-fluid {
+section,
+.container,
+.container-fluid {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
 
 /* Tighten Bootstrap utility classes */
-.mb-3 { margin-bottom: 0.75rem !important; }
-.mb-4 { margin-bottom: 1rem !important; }
-.mt-3 { margin-top: 0.75rem !important; }
-.mt-4 { margin-top: 1rem !important; }
+.mb-3 {
+  margin-bottom: 0.75rem !important;
+}
+.mb-4 {
+  margin-bottom: 1rem !important;
+}
+.mt-3 {
+  margin-top: 0.75rem !important;
+}
+.mt-4 {
+  margin-top: 1rem !important;
+}
 
 /* Form groups */
 .form-group,
@@ -43,4 +77,11 @@ section, .container, .container-fluid {
 /* Card bodies */
 .card-body {
   padding: 0.75rem;
+}
+
+.blog {
+  max-width: 90ch; /* readable line length */
+  margin-inline: auto; /* center horizontally */
+  padding-inline: 1.25rem; /* breathing room on small screens */
+  line-height: 1.6; /* optional: improves readability */
 }
